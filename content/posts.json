@@ -1,0 +1,37 @@
+{
+  "posts": [
+    {
+      "slug": "example-seo-campaign",
+      "title": "Scaling Organic Traffic Through Strategic SEO",
+      "client": "Example Client",
+      "category": "SEO / GEO",
+      "excerpt": "How a targeted SEO and GEO strategy helped a B2B brand triple its organic traffic in six months and earn citations in AI-generated answers.",
+      "date": "2026-02-01",
+      "tags": ["SEO", "GEO", "Content"],
+      "thumb": "",
+      "postFile": "example-seo-campaign.html"
+    },
+    {
+      "slug": "example-content-strategy",
+      "title": "Building a Content Engine from Scratch",
+      "client": "Example Client",
+      "category": "Content Marketing",
+      "excerpt": "Creating a full content marketing programme — from audience research and editorial planning to production and distribution — for a growing SaaS brand.",
+      "date": "2026-01-10",
+      "tags": ["Content Marketing", "Strategy"],
+      "thumb": "",
+      "postFile": "example-content-strategy.html"
+    },
+    {
+      "slug": "example-digital-strategy",
+      "title": "Digital Communications Strategy for Market Entry",
+      "client": "Example Client",
+      "category": "Strategy",
+      "excerpt": "A full digital communications audit and go-to-market strategy for a brand entering a competitive new market.",
+      "date": "2025-11-20",
+      "tags": ["Strategy", "SEO"],
+      "thumb": "",
+      "postFile": ""
+    }
+  ]
+}

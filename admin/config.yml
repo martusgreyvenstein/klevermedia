@@ -1,0 +1,36 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: assets/images
+public_folder: /assets/images
+
+collections:
+  - name: "work"
+    label: "Work Posts"
+    files:
+      - label: "Work Posts"
+        name: "posts"
+        file: "content/posts.json"
+        fields:
+          - label: "Posts"
+            name: "posts"
+            widget: "list"
+            summary: "{{fields.title}} — {{fields.client}}"
+            fields:
+              - { label: "Title",     name: "title",    widget: "string" }
+              - { label: "Client",    name: "client",   widget: "string" }
+              - { label: "Slug",      name: "slug",     widget: "string", hint: "URL-friendly, no spaces (e.g. my-new-project)" }
+              - label: "Category"
+                name: "category"
+                widget: "select"
+                options:
+                  - "SEO / GEO"
+                  - "Content Marketing"
+                  - "Strategy"
+                  - "SEO / Content Marketing"
+              - { label: "Excerpt",   name: "excerpt",  widget: "text" }
+              - { label: "Date",      name: "date",     widget: "date", format: "YYYY-MM-DD" }
+              - { label: "Tags",      name: "tags",     widget: "list" }
+              - { label: "Thumbnail", name: "thumb",    widget: "image",  required: false }
+              - { label: "Post File", name: "postFile", widget: "string", required: false, hint: "Filename in /work/ folder (e.g. my-new-project.html)" }
