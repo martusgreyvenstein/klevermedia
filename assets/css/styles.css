@@ -906,6 +906,24 @@ p { max-width: 65ch; }
   margin-top: 4px;
 }
 
+/* Simple CTA variant — used on sub-pages (no form, centred) */
+.contact--cta .contact__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+  max-width: 640px;
+  margin: 0 auto;
+}
+.contact--cta h2,
+.contact--cta .section__heading {
+  color: var(--white);
+}
+.contact--cta .contact__body {
+  max-width: none;
+}
+
 /* ============================================================
    FOOTER
    ============================================================ */

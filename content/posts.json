@@ -9,7 +9,13 @@
       "date": "2026-02-01",
       "tags": ["SEO", "GEO", "Content"],
       "thumb": "",
-      "postFile": "example-seo-campaign.html"
+      "postFile": "example-seo-campaign.html",
+      "seo": {
+        "keyphrase": "SEO strategy for B2B brands",
+        "metaTitle": "Scaling Organic Traffic with Strategic SEO — Klever Media",
+        "metaDescription": "How a targeted SEO and GEO strategy helped a B2B brand triple its organic traffic in six months and earn citations in AI-generated answers from ChatGPT and Perplexity.",
+        "ogImage": ""
+      }
     },
     {
       "slug": "example-content-strategy",
@@ -20,7 +26,13 @@
       "date": "2026-01-10",
       "tags": ["Content Marketing", "Strategy"],
       "thumb": "",
-      "postFile": "example-content-strategy.html"
+      "postFile": "example-content-strategy.html",
+      "seo": {
+        "keyphrase": "content marketing strategy for SaaS",
+        "metaTitle": "Building a Content Marketing Engine from Scratch — Klever Media",
+        "metaDescription": "How Klever Media built a full content marketing programme for a growing SaaS brand — from audience research and editorial planning to production, distribution, and measurable results.",
+        "ogImage": ""
+      }
     },
     {
       "slug": "example-digital-strategy",
@@ -31,7 +43,13 @@
       "date": "2025-11-20",
       "tags": ["Strategy", "SEO"],
       "thumb": "",
-      "postFile": ""
+      "postFile": "",
+      "seo": {
+        "keyphrase": "digital communications strategy market entry",
+        "metaTitle": "Digital Communications Strategy for Market Entry — Klever Media",
+        "metaDescription": "A full digital communications audit and go-to-market strategy that helped a brand enter a competitive new market with a clear, channel-led approach to visibility and growth.",
+        "ogImage": ""
+      }
     }
   ]
 }
