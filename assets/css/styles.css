@@ -523,6 +523,14 @@ p { max-width: 65ch; }
   opacity: 0.25;
 }
 
+.service-detail__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 12px;
+}
+
 .detail-list {
   margin-top: 16px;
   display: flex;
@@ -1102,7 +1110,7 @@ p { max-width: 65ch; }
     direction: ltr !important;
   }
   .service-detail:nth-child(even) .service-detail__inner > * { direction: ltr; }
-  .service-detail__visual { display: none; }
+  .service-detail__visual { display: flex; aspect-ratio: 16/9; }
 
   .about-strip__inner { grid-template-columns: 1fr; gap: 48px; }
 
