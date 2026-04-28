@@ -11,11 +11,11 @@
   <meta name="description" content="LinkedIn ghostwriting for executives and founders. Your expertise, your voice — content that builds authority without taking your time.">
   <meta name="robots" content="index, follow">
   <meta name="author" content="Klever Media">
-  <link rel="canonical" href="https://www.klevermedia.co.za/ghostwriting-for-executives.html">
+  <link rel="canonical" href="https://www.klevermedia.co.za/ghostwriting.html">
 
   <!-- Open Graph -->
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://www.klevermedia.co.za/ghostwriting-for-executives.html">
+  <meta property="og:url" content="https://www.klevermedia.co.za/ghostwriting.html">
   <meta property="og:site_name" content="Klever Media">
   <meta property="og:title" content="Executive LinkedIn Ghostwriting | Klever Media">
   <meta property="og:description" content="LinkedIn ghostwriting for executives and founders. Your expertise, your voice — content that builds authority without taking your time.">
@@ -50,15 +50,6 @@
       color: var(--white);
       text-align: center;
     }
-    .ghost-hero__label {
-      display: inline-block;
-      font-size: 0.78rem;
-      font-weight: 600;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      color: rgba(255,255,255,0.7);
-      margin-bottom: 20px;
-    }
     .ghost-hero h1 {
       font-size: clamp(2rem, 5vw, 3.2rem);
       font-weight: 700;
@@ -74,17 +65,34 @@
       margin: 0 auto;
       line-height: 1.7;
     }
-    .ghost-benefits {
-      padding: 80px 0;
+    .ghost-intro {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 64px;
+      align-items: center;
     }
-    .ghost-benefits__intro {
-      max-width: 640px;
-      margin-bottom: 48px;
+    .ghost-intro__text h2 {
+      font-size: clamp(1.5rem, 3vw, 2rem);
+      font-weight: 700;
+      color: #1a1a1a;
+      line-height: 1.25;
+      margin-bottom: 20px;
     }
-    .ghost-benefits__intro p {
-      font-size: 1.1rem;
-      color: var(--text-light);
-      line-height: 1.7;
+    .ghost-intro__text p {
+      font-size: 1.05rem;
+      color: var(--text);
+      line-height: 1.75;
+    }
+    .ghost-intro__visual {
+      border-radius: 16px;
+      overflow: hidden;
+      aspect-ratio: 4/3;
+    }
+    .ghost-intro__visual img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
     }
     .ghost-list {
       list-style: none;
@@ -117,6 +125,12 @@
       color: var(--text);
       line-height: 1.7;
     }
+    @media (max-width: 768px) {
+      .ghost-intro {
+        grid-template-columns: 1fr;
+        gap: 32px;
+      }
+    }
   </style>
 </head>
 <body>
@@ -147,18 +161,30 @@
     <!-- Hero -->
     <section class="ghost-hero" aria-labelledby="ghost-heading">
       <div class="container">
-        <p class="ghost-hero__label">LinkedIn Ghostwriting</p>
-        <h1 id="ghost-heading">Your expertise is the content.<br>I just make sure the world sees it.</h1>
-        <p class="ghost-hero__sub">LinkedIn ghostwriting for executives and founders who have the knowledge, but not the time or words to share it.</p>
+        <h1 id="ghost-heading">Turn your expertise into<br>a personal brand</h1>
+        <p class="ghost-hero__sub">You've spent years building knowledge your industry would value — you just never find the time to share it. We extract, shape, and publish it for you, consistently and in your voice.</p>
+      </div>
+    </section>
+
+    <!-- Intro Row -->
+    <section class="section" aria-labelledby="ghost-intro-heading">
+      <div class="container">
+        <div class="ghost-intro">
+          <div class="ghost-intro__text">
+            <h2 id="ghost-intro-heading">Your ideas deserve an audience</h2>
+            <p>Every executive has a point of view worth hearing — the kind of insight that only comes from years in the room where decisions get made. A consistent LinkedIn presence puts that knowledge in front of the people who matter, and positions you as the voice worth following.</p>
+          </div>
+          <div class="ghost-intro__visual" aria-hidden="true">
+            <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=800&q=80" alt="">
+          </div>
+        </div>
       </div>
     </section>
 
     <!-- Benefits -->
-    <section class="ghost-benefits section" aria-labelledby="benefits-heading">
+    <section class="section section--grey" aria-labelledby="benefits-heading">
       <div class="container">
-        <div class="ghost-benefits__intro">
-          <h2 id="benefits-heading" class="section__heading">Why it works</h2>
-        </div>
+        <h2 id="benefits-heading" class="section__heading" style="margin-bottom: 40px;">Making your personal brand work for you</h2>
         <ol class="ghost-list" role="list">
           <li class="ghost-list__item">
             <span class="ghost-list__num" aria-hidden="true">1</span>
@@ -185,7 +211,7 @@
     </section>
 
     <!-- CTA -->
-    <section class="contact contact--cta section section--grey" id="contact" aria-labelledby="ghost-cta-heading">
+    <section class="contact contact--cta section" id="contact" aria-labelledby="ghost-cta-heading">
       <div class="container">
         <div class="contact__inner">
           <h2 id="ghost-cta-heading" class="section__heading">Let's find your angle.</h2>
