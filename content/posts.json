@@ -1,55 +1,125 @@
 {
   "posts": [
     {
-      "slug": "example-seo-campaign",
-      "title": "Scaling Organic Traffic Through Strategic SEO",
-      "client": "Example Client",
-      "category": "SEO / GEO",
-      "excerpt": "How a targeted SEO and GEO strategy helped a B2B brand triple its organic traffic in six months and earn citations in AI-generated answers.",
-      "date": "2026-02-01",
-      "tags": ["SEO", "GEO", "Content"],
-      "thumb": "https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=800&q=80",
-      "postFile": "example-seo-campaign.html",
-      "seo": {
-        "keyphrase": "SEO strategy for B2B brands",
-        "metaTitle": "Scaling Organic Traffic with Strategic SEO — Klever Media",
-        "metaDescription": "How a targeted SEO and GEO strategy helped a B2B brand triple its organic traffic in six months and earn citations in AI-generated answers from ChatGPT and Perplexity.",
-        "ogImage": ""
-      }
-    },
-    {
-      "slug": "example-content-strategy",
-      "title": "Building a Content Engine from Scratch",
-      "client": "Example Client",
+      "slug": "kin-culture-annual-reports",
+      "title": "Turning a Year of Impact Into a Story Worth Reading",
+      "client": "Kin Culture",
       "category": "Content Marketing",
-      "excerpt": "Creating a full content marketing programme — from audience research and editorial planning to production and distribution — for a growing SaaS brand.",
-      "date": "2026-01-10",
-      "tags": ["Content Marketing", "Strategy"],
-      "thumb": "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=800&q=80",
-      "postFile": "example-content-strategy.html",
+      "excerpt": "Writing and structuring Kin Culture's annual reports so a year of data and impact reads like a story people actually want to finish.",
+      "date": "2026-03-01",
+      "tags": ["Annual Reports", "Content Marketing"],
+      "thumb": "assets/images/about.jpg",
+      "postFile": "kin-culture-annual-reports.html",
       "seo": {
-        "keyphrase": "content marketing strategy for SaaS",
-        "metaTitle": "Building a Content Marketing Engine from Scratch — Klever Media",
-        "metaDescription": "How Klever Media built a full content marketing programme for a growing SaaS brand — from audience research and editorial planning to production, distribution, and measurable results.",
+        "keyphrase": "annual report writing",
+        "metaTitle": "Kin Culture Annual Reports — Klever Media",
+        "metaDescription": "Writing and structuring Kin Culture's annual reports so a year of data and impact reads like a story people actually want to finish.",
         "ogImage": ""
       }
     },
     {
-      "slug": "example-digital-strategy",
-      "title": "Digital Communications Strategy for Market Entry",
-      "client": "Example Client",
-      "category": "Strategy",
-      "excerpt": "A full digital communications audit and go-to-market strategy for a brand entering a competitive new market.",
-      "date": "2025-11-20",
-      "tags": ["Strategy", "SEO"],
-      "thumb": "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=800&q=80",
-      "postFile": "",
+      "slug": "social-media-content",
+      "title": "Social Media Content for Purpose-Driven Brands",
+      "client": "Various Clients",
+      "category": "Content Marketing",
+      "excerpt": "Ongoing social media content — planned, written, and produced — for purpose-driven organisations that need a consistent voice online.",
+      "date": "2026-02-15",
+      "tags": ["Social Media", "Content Marketing"],
+      "thumb": "assets/images/photo-philosophy-zebras.jpg",
+      "postFile": "social-media-content.html",
       "seo": {
-        "keyphrase": "digital communications strategy market entry",
-        "metaTitle": "Digital Communications Strategy for Market Entry — Klever Media",
-        "metaDescription": "A full digital communications audit and go-to-market strategy that helped a brand enter a competitive new market with a clear, channel-led approach to visibility and growth.",
+        "keyphrase": "social media content for non-profits",
+        "metaTitle": "Social Media Content for Purpose-Driven Brands — Klever Media",
+        "metaDescription": "Ongoing social media content — planned, written, and produced — for purpose-driven organisations that need a consistent voice online.",
         "ogImage": ""
       }
+    },
+    {
+      "slug": "academy-environmental-leadership",
+      "title": "Content That Builds Environmental Leaders",
+      "client": "Academy for Environmental Leadership (AEL)",
+      "category": "Content Marketing",
+      "excerpt": "Content pieces for the Academy for Environmental Leadership, helping communicate their programmes to future conservation leaders.",
+      "date": "2026-02-01",
+      "tags": ["Content Marketing", "Education"],
+      "thumb": "assets/images/photo-industries-road.jpg",
+      "postFile": "academy-environmental-leadership.html",
+      "seo": {
+        "keyphrase": "content marketing for environmental education",
+        "metaTitle": "Content for Academy for Environmental Leadership — Klever Media",
+        "metaDescription": "Content pieces for the Academy for Environmental Leadership, helping communicate their programmes to future conservation leaders.",
+        "ogImage": ""
+      }
+    },
+    {
+      "slug": "access-for-success",
+      "title": "Telling the Access for Success Story",
+      "client": "Access for Success (A4S)",
+      "category": "Content Marketing",
+      "excerpt": "Content pieces for Access for Success, communicating their mission and programmes to the people and partners who support it.",
+      "date": "2026-01-20",
+      "tags": ["Content Marketing", "Non-Profit"],
+      "thumb": "assets/images/photo-contact-river.jpg",
+      "postFile": "access-for-success.html",
+      "seo": {
+        "keyphrase": "content marketing for non-profits",
+        "metaTitle": "Content for Access for Success — Klever Media",
+        "metaDescription": "Content pieces for Access for Success, communicating their mission and programmes to the people and partners who support it.",
+        "ogImage": ""
+      }
+    },
+    {
+      "slug": "milpark-university",
+      "title": "Content Writing for Milpark University",
+      "client": "Milpark University",
+      "category": "Content Marketing",
+      "excerpt": "Writing content for Milpark University — communicating academic programmes clearly, for the students deciding whether to enrol.",
+      "date": "2026-01-05",
+      "tags": ["Content Marketing", "Education"],
+      "thumb": "assets/images/2.jpg",
+      "postFile": "milpark-university.html",
+      "seo": {
+        "keyphrase": "content writing for universities",
+        "metaTitle": "Content Writing for Milpark University — Klever Media",
+        "metaDescription": "Writing content for Milpark University — communicating academic programmes clearly, for the students deciding whether to enrol.",
+        "ogImage": ""
+      }
+    },
+    {
+      "slug": "placeholder-seo-geo",
+      "title": "New Case Study Coming Soon",
+      "client": "",
+      "category": "SEO / GEO",
+      "excerpt": "We're putting the finishing touches on this case study — check back soon.",
+      "date": "2026-03-10",
+      "tags": ["SEO", "GEO"],
+      "thumb": "",
+      "postFile": "",
+      "seo": { "keyphrase": "", "metaTitle": "", "metaDescription": "", "ogImage": "" }
+    },
+    {
+      "slug": "placeholder-content-marketing",
+      "title": "New Case Study Coming Soon",
+      "client": "",
+      "category": "Content Marketing",
+      "excerpt": "We're putting the finishing touches on this case study — check back soon.",
+      "date": "2026-03-10",
+      "tags": ["Content Marketing"],
+      "thumb": "",
+      "postFile": "",
+      "seo": { "keyphrase": "", "metaTitle": "", "metaDescription": "", "ogImage": "" }
+    },
+    {
+      "slug": "placeholder-strategy",
+      "title": "New Case Study Coming Soon",
+      "client": "",
+      "category": "Strategy",
+      "excerpt": "We're putting the finishing touches on this case study — check back soon.",
+      "date": "2026-03-10",
+      "tags": ["Strategy"],
+      "thumb": "",
+      "postFile": "",
+      "seo": { "keyphrase": "", "metaTitle": "", "metaDescription": "", "ogImage": "" }
     }
   ]
 }

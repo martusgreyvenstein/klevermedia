@@ -7,7 +7,7 @@
 const fs   = require('fs');
 const path = require('path');
 
-const BASE_URL = 'https://www.klevermedia.com';
+const BASE_URL = 'https://www.klevermedia.co.za';
 const ROOT     = path.join(__dirname, '..');
 const today    = new Date().toISOString().split('T')[0];
 
@@ -54,6 +54,13 @@ const sitemap = [
   '    <lastmod>' + today + '</lastmod>',
   '    <changefreq>weekly</changefreq>',
   '    <priority>0.8</priority>',
+  '  </url>',
+  '',
+  '  <url>',
+  '    <loc>' + BASE_URL + '/ghostwriting.html</loc>',
+  '    <lastmod>' + today + '</lastmod>',
+  '    <changefreq>monthly</changefreq>',
+  '    <priority>0.7</priority>',
   '  </url>',
   '',
   '  <!-- Work posts (auto-generated from content/posts.json) -->',

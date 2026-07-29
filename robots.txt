@@ -1,5 +1,5 @@
 # robots.txt — Klever Media
-# https://www.klevermedia.com
+# https://www.klevermedia.co.za
 
 User-agent: *
 Allow: /
@@ -27,4 +27,4 @@ User-agent: cohere-ai
 Allow: /
 
 # Sitemap location
-Sitemap: https://www.klevermedia.com/sitemap.xml
+Sitemap: https://www.klevermedia.co.za/sitemap.xml
