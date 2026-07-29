@@ -5,35 +5,52 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-  <title>Content Writing for Milpark University — Klever Media</title>
-  <meta name="title" content="Content Writing for Milpark University — Klever Media">
-  <meta name="description" content="Writing content for Milpark University — communicating academic programmes clearly, for the students deciding whether to enrol.">
+  <!--
+  ════════════════════════════════════════════════════════
+  HOW TO USE THIS TEMPLATE
+  ════════════════════════════════════════════════════════
+  1. Duplicate this file and rename it to match your post
+     slug (e.g. "my-article.html") — keep it in /insights/
+  2. Find every <!-- EDIT: --> comment and replace the
+     placeholder text with your real content.
+  3. Add your post to content/insights.json.
+  4. Delete these instructions once you're done.
+  ════════════════════════════════════════════════════════
+  -->
+
+  <!-- EDIT: Update title, description, and canonical URL -->
+  <title><!-- EDIT: Post Title --> — Klever Media</title>
+  <meta name="title" content="<!-- EDIT: Post Title --> — Klever Media">
+  <meta name="description" content="<!-- EDIT: 1–2 sentence summary of the article. -->">
   <meta name="robots" content="index, follow">
   <meta name="author" content="Klever Media">
-  <link rel="canonical" href="https://www.klevermedia.co.za/work/milpark-university.html">
+  <link rel="canonical" href="https://www.klevermedia.co.za/insights/<!-- EDIT: your-slug -->.html">
 
+  <!-- Open Graph -->
   <meta property="og:type" content="article">
-  <meta property="og:url" content="https://www.klevermedia.co.za/work/milpark-university.html">
+  <meta property="og:url" content="https://www.klevermedia.co.za/insights/<!-- EDIT: your-slug -->.html">
   <meta property="og:site_name" content="Klever Media">
-  <meta property="og:title" content="Content Writing for Milpark University — Klever Media">
-  <meta property="og:description" content="Writing content for Milpark University — communicating academic programmes clearly, for the students deciding whether to enrol.">
-  <meta property="og:image" content="https://www.klevermedia.co.za/assets/images/2.jpg">
+  <meta property="og:title" content="<!-- EDIT: Post Title --> — Klever Media">
+  <meta property="og:description" content="<!-- EDIT: Short summary for social sharing. -->">
+  <meta property="og:image" content="https://www.klevermedia.co.za/assets/images/og-image.jpg">
 
+  <!-- Structured Data: Article -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Article",
-    "headline": "Content Writing for Milpark University",
-    "description": "Writing content for Milpark University — communicating academic programmes clearly, for the students deciding whether to enrol.",
+    "headline": "<!-- EDIT: Post Title -->",
+    "description": "<!-- EDIT: 1–2 sentence summary -->",
     "author": { "@type": "Organization", "name": "Klever Media", "url": "https://www.klevermedia.co.za" },
     "publisher": { "@type": "Organization", "name": "Klever Media" },
-    "datePublished": "2026-01-05",
-    "dateModified": "2026-01-05",
-    "url": "https://www.klevermedia.co.za/work/milpark-university.html",
-    "about": { "@type": "Service", "name": "Content Marketing" }
+    "datePublished": "<!-- EDIT: YYYY-MM-DD -->",
+    "dateModified": "<!-- EDIT: YYYY-MM-DD -->",
+    "url": "https://www.klevermedia.co.za/insights/<!-- EDIT: your-slug -->.html",
+    "about": { "@type": "Thing", "name": "<!-- EDIT: e.g. Content Marketing, Strategy -->" }
   }
   </script>
 
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -42,6 +59,7 @@
 </head>
 <body>
 
+  <!-- Navigation -->
   <header class="site-header" role="banner">
     <nav class="nav container" aria-label="Primary navigation">
       <a href="../index.html" class="nav__logo" aria-label="Klever Media — home">
@@ -56,8 +74,8 @@
       <ul class="nav__menu" id="nav-menu" role="list">
         <li><a href="../index.html" class="nav__link">Home</a></li>
         <li><a href="../services.html" class="nav__link">Services</a></li>
-        <li><a href="../work.html" class="nav__link active">Work</a></li>
-        <li><a href="../insights.html" class="nav__link">Insights</a></li>
+        <li><a href="../work.html" class="nav__link">Work</a></li>
+        <li><a href="../insights.html" class="nav__link active">Insights</a></li>
         <li><a href="../index.html#contact" class="nav__link nav__link--cta">Get in touch</a></li>
       </ul>
     </nav>
@@ -65,51 +83,59 @@
 
   <main id="main-content">
 
+    <!-- Post Header -->
     <section class="post-header" aria-labelledby="post-title">
       <div class="container">
-        <a href="../work.html" class="post-header__back">Back to work</a>
-        <p class="post-header__tag">Content Marketing</p>
-        <h1 id="post-title">Content Writing for Milpark University</h1>
+        <a href="../insights.html" class="post-header__back">Back to Insights</a>
+        <!-- EDIT: Category — e.g. Content Marketing, Marketing Engineering, Strategy -->
+        <p class="post-header__tag"><!-- EDIT: Category --></p>
+        <h1 id="post-title"><!-- EDIT: Post Title --></h1>
         <p class="post-header__meta">
-          <strong>Client:</strong> Milpark University &nbsp;·&nbsp;
-          <time datetime="2026-01-05">January 2026</time>
+          <!-- EDIT: Published date, formatted nicely -->
+          <time datetime="<!-- EDIT: YYYY-MM-DD -->"><!-- EDIT: Month YYYY --></time>
         </p>
       </div>
     </section>
 
+    <!-- Post Body -->
     <article class="post-body" itemscope itemtype="https://schema.org/Article">
       <div class="container">
         <div class="post-body__inner">
 
+          <!-- EDIT: Delete this if you don't have a hero image.
+               If you do, add the image to assets/images/insights/ and update the src. -->
+          <!--
           <img
-            src="../assets/images/2.jpg"
-            alt="Content writing project for Milpark University"
+            src="../assets/images/insights/your-image.jpg"
+            alt="<!-- EDIT: Descriptive alt text -->"
             class="post-hero-image"
             width="1200"
             height="630"
             itemprop="image"
           >
+          -->
 
-          <h2>Overview</h2>
-          <p itemprop="description">Milpark University needed academic programme content written for the people actually making the decision to enrol — prospective students weighing their options, not admissions committees. We write that content clearly, without losing the substance of the programmes themselves.</p>
+          <p itemprop="description"><!-- EDIT: Opening paragraph — the hook. --></p>
 
-          <h2>What we do</h2>
-          <p>Higher education content has to balance credibility with clarity — it needs to feel trustworthy without reading like a prospectus nobody finishes. We write for Milpark with that balance in mind.</p>
-          <ul>
-            <li>Programme and course content written for prospective students</li>
-            <li>Copy that stays clear and credible at the same time</li>
-            <li>Ongoing content writing as programmes are added or updated</li>
-          </ul>
+          <h2><!-- EDIT: First section heading --></h2>
+          <p><!-- EDIT: Body copy --></p>
+
+          <h2><!-- EDIT: Second section heading --></h2>
+          <p><!-- EDIT: Body copy --></p>
+
+          <h2><!-- EDIT: Closing section heading --></h2>
+          <p><!-- EDIT: Closing thought — no forced summary, just land the point. --></p>
 
         </div>
       </div>
     </article>
 
+    <!-- Contact CTA -->
     <section class="contact section" aria-labelledby="post-contact-heading">
       <div class="container">
         <div class="contact__inner">
-          <h2 id="post-contact-heading" class="section__heading">Want results like these?</h2>
-          <p class="contact__body">Let's talk about what Klever Media can do for your brand.</p>
+          <h2 id="post-contact-heading" class="section__heading">Have a story that isn't landing?</h2>
+          <p class="contact__body">Let's talk about what Klever Media can do for your organisation.</p>
           <a href="mailto:hello@klevermedia.com" class="btn btn--gold">hello@klevermedia.com</a>
         </div>
       </div>
@@ -117,6 +143,7 @@
 
   </main>
 
+  <!-- Footer -->
   <footer class="site-footer" role="contentinfo">
     <div class="container">
       <div class="footer__inner">

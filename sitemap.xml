@@ -31,6 +31,13 @@
     <priority>0.7</priority>
   </url>
 
+  <url>
+    <loc>https://www.klevermedia.co.za/insights.html</loc>
+    <lastmod>2026-07-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
   <!-- Work posts (auto-generated from content/posts.json) -->
   <url>
     <loc>https://www.klevermedia.co.za/work/kin-culture-annual-reports.html</loc>
@@ -61,6 +68,26 @@
     <lastmod>2026-01-05</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
+  </url>
+
+  <!-- Insights posts (auto-generated from content/insights.json) -->
+  <url>
+    <loc>https://www.klevermedia.co.za/insights/what-is-content-marketing.html</loc>
+    <lastmod>2026-07-20</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.klevermedia.co.za/insights/search-marketing-seo-geo-explained.html</loc>
+    <lastmod>2026-07-13</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.klevermedia.co.za/insights/how-to-build-a-marketing-message.html</loc>
+    <lastmod>2026-07-06</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
   </url>
 
 </urlset>

@@ -1,0 +1,34 @@
+{
+  "posts": [
+    {
+      "slug": "what-is-content-marketing",
+      "title": "What Is Content Marketing? A Plain-Language Guide for Purpose-Driven Organisations",
+      "category": "Content Marketing",
+      "excerpt": "Not another definition copied from a marketing textbook — what content marketing actually looks like for a school, a non-profit, or a lodge.",
+      "date": "2026-07-20",
+      "tags": ["Content Marketing"],
+      "thumb": "",
+      "postFile": "what-is-content-marketing.html"
+    },
+    {
+      "slug": "search-marketing-seo-geo-explained",
+      "title": "Search Marketing Explained: SEO and GEO for Organisations Doing Good Work",
+      "category": "Marketing Engineering",
+      "excerpt": "Two acronyms, one job: making sure the people already looking for you — on Google or ChatGPT — actually find you.",
+      "date": "2026-07-13",
+      "tags": ["Marketing Engineering", "SEO", "GEO"],
+      "thumb": "",
+      "postFile": "search-marketing-seo-geo-explained.html"
+    },
+    {
+      "slug": "how-to-build-a-marketing-message",
+      "title": "How to Build a Marketing Message People Actually Believe",
+      "category": "Strategy",
+      "excerpt": "Most mission-driven messaging fails for the same reason: it leads with what you do, not what changes for the person reading it.",
+      "date": "2026-07-06",
+      "tags": ["Strategy", "Messaging"],
+      "thumb": "",
+      "postFile": "how-to-build-a-marketing-message.html"
+    }
+  ]
+}

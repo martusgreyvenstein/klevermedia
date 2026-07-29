@@ -54,28 +54,33 @@
     window.addEventListener('scroll', updateHeaderState, { passive: true });
   }
 
-  /* ── Work card renderer ─────────────────────────────────── */
+  /* ── Card renderer (shared by Work and Insights) ────────── */
   /**
-   * Renders work cards into a container.
+   * Renders post cards into a container. Same visual pattern is
+   * reused for both Work case studies and Insights articles.
    * @param {HTMLElement} container  - The grid element to render into
-   * @param {Array}       posts      - Array of post objects from posts-data.js
+   * @param {Array}       posts      - Array of post objects
    * @param {number}      limit      - Max cards to show (0 = all)
    * @param {string}      basePath   - Relative path prefix for post links
+   * @param {string}      folder     - Subfolder the post lives in ('work/' or 'insights/')
+   * @param {string}      linkText   - Card CTA text (defaults to 'View case study')
    */
-  function renderWorkCards(container, posts, limit, basePath) {
+  function renderWorkCards(container, posts, limit, basePath, folder, linkText) {
     if (!container || !Array.isArray(posts)) return;
+    folder = folder || 'work/';
+    linkText = linkText || 'View case study';
 
     var items = limit > 0 ? posts.slice(0, limit) : posts;
 
     if (items.length === 0) {
       container.innerHTML =
-        '<div class="work-empty"><p>No work posts yet — check back soon.</p></div>';
+        '<div class="work-empty"><p>No posts yet — check back soon.</p></div>';
       return;
     }
 
     container.innerHTML = items.map(function (post) {
       var clickable = !!post.postFile;
-      var href = clickable ? basePath + 'work/' + post.postFile : '';
+      var href = clickable ? basePath + folder + post.postFile : '';
       var tag = clickable ? 'a' : 'div';
 
       var thumbHtml = post.thumb
@@ -94,7 +99,7 @@
           '<p class="work-card__tag">' + escapeHtml(post.category) + '</p>' +
           '<h3>' + escapeHtml(post.title) + '</h3>' +
           '<p>' + escapeHtml(post.excerpt) + '</p>' +
-          (clickable ? '<span class="work-card__link">View case study</span>' : '') +
+          (clickable ? '<span class="work-card__link">' + linkText + '</span>' : '') +
         '</div>' +
       '</' + tag + '>';
     }).join('');
@@ -125,5 +130,22 @@
   }
 
   }); // end posts-ready
+
+  /* ── Render insight cards once insights-data.js has fetched ─ */
+  document.addEventListener('insights-ready', function () {
+
+  /* ── Home page: insights teaser, if present ──────────────── */
+  var insightsTeaserGrid = document.getElementById('insights-teaser-grid');
+  if (insightsTeaserGrid) {
+    renderWorkCards(insightsTeaserGrid, window.INSIGHTS, 3, '', 'insights/', 'Read the article');
+  }
+
+  /* ── Insights page: full grid ────────────────────────────── */
+  var insightsGrid = document.getElementById('insights-grid');
+  if (insightsGrid) {
+    renderWorkCards(insightsGrid, window.INSIGHTS, 0, '', 'insights/', 'Read the article');
+  }
+
+  }); // end insights-ready
 
 })();
