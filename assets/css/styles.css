@@ -376,6 +376,7 @@ p { max-width: 65ch; }
   display: block;
   border-radius: 24px;
   object-fit: cover;
+  object-position: 80% center;
   aspect-ratio: 4/3;
   box-shadow: 0 20px 56px rgba(0,0,0,0.25);
 }
