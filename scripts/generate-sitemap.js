@@ -11,6 +11,33 @@ const BASE_URL = 'https://www.klevermedia.co.za';
 const ROOT     = path.join(__dirname, '..');
 const today    = new Date().toISOString().split('T')[0];
 
+// Core pages, including every service pillar page.
+// Add a new pillar page here when one is built, or it will never reach the sitemap.
+const CORE_PAGES = [
+  { loc: '/', changefreq: 'monthly', priority: '1.0' },
+  { loc: '/services.html', changefreq: 'monthly', priority: '0.9' },
+  { loc: '/work.html', changefreq: 'weekly', priority: '0.8' },
+  { loc: '/insights.html', changefreq: 'weekly', priority: '0.8' },
+  { loc: '/ghostwriting.html', changefreq: 'monthly', priority: '0.7' },
+  { loc: '/personal-branding.html', changefreq: 'monthly', priority: '0.7' },
+  { loc: '/website-management.html', changefreq: 'monthly', priority: '0.7' },
+  { loc: '/search-marketing.html', changefreq: 'monthly', priority: '0.7' },
+  { loc: '/impact-communications.html', changefreq: 'monthly', priority: '0.7' },
+  { loc: '/marketing-strategy.html', changefreq: 'monthly', priority: '0.7' },
+  { loc: '/social-media-management.html', changefreq: 'monthly', priority: '0.7' }
+];
+
+const corePageUrls = CORE_PAGES.map(function (p) {
+  return [
+    '  <url>',
+    '    <loc>' + BASE_URL + p.loc + '</loc>',
+    '    <lastmod>' + today + '</lastmod>',
+    '    <changefreq>' + p.changefreq + '</changefreq>',
+    '    <priority>' + p.priority + '</priority>',
+    '  </url>'
+  ].join('\n');
+}).join('\n\n');
+
 // Load posts
 const postsFile = path.join(ROOT, 'content', 'posts.json');
 const posts     = JSON.parse(fs.readFileSync(postsFile, 'utf8')).posts || [];
@@ -53,40 +80,7 @@ const sitemap = [
   '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">',
   '',
   '  <!-- Core pages -->',
-  '  <url>',
-  '    <loc>' + BASE_URL + '/</loc>',
-  '    <lastmod>' + today + '</lastmod>',
-  '    <changefreq>monthly</changefreq>',
-  '    <priority>1.0</priority>',
-  '  </url>',
-  '',
-  '  <url>',
-  '    <loc>' + BASE_URL + '/services.html</loc>',
-  '    <lastmod>' + today + '</lastmod>',
-  '    <changefreq>monthly</changefreq>',
-  '    <priority>0.9</priority>',
-  '  </url>',
-  '',
-  '  <url>',
-  '    <loc>' + BASE_URL + '/work.html</loc>',
-  '    <lastmod>' + today + '</lastmod>',
-  '    <changefreq>weekly</changefreq>',
-  '    <priority>0.8</priority>',
-  '  </url>',
-  '',
-  '  <url>',
-  '    <loc>' + BASE_URL + '/ghostwriting.html</loc>',
-  '    <lastmod>' + today + '</lastmod>',
-  '    <changefreq>monthly</changefreq>',
-  '    <priority>0.7</priority>',
-  '  </url>',
-  '',
-  '  <url>',
-  '    <loc>' + BASE_URL + '/insights.html</loc>',
-  '    <lastmod>' + today + '</lastmod>',
-  '    <changefreq>weekly</changefreq>',
-  '    <priority>0.8</priority>',
-  '  </url>',
+  corePageUrls,
   '',
   '  <!-- Work posts (auto-generated from content/posts.json) -->',
   postUrls,
@@ -98,4 +92,4 @@ const sitemap = [
 ].join('\n');
 
 fs.writeFileSync(path.join(ROOT, 'sitemap.xml'), sitemap);
-console.log('✓ sitemap.xml regenerated — ' + publishedPosts.length + ' work post(s), ' + publishedInsights.length + ' insight post(s) included.');
+console.log('✓ sitemap.xml regenerated — ' + CORE_PAGES.length + ' core page(s), ' + publishedPosts.length + ' work post(s), ' + publishedInsights.length + ' insight post(s) included.');

@@ -1,6 +1,36 @@
 {
   "posts": [
     {
+      "slug": "should-executives-use-a-ghostwriter",
+      "title": "Should Executives Use a Ghostwriter for LinkedIn?",
+      "category": "Personal Branding",
+      "excerpt": "The honest answer to whether ghostwriting is authentic, and what actually makes the difference between a real voice and a generic one.",
+      "date": "2026-09-16",
+      "tags": ["Personal Branding", "Ghostwriting"],
+      "thumb": "",
+      "postFile": "should-executives-use-a-ghostwriter.html"
+    },
+    {
+      "slug": "how-to-audit-your-marketing-before-you-spend-more",
+      "title": "How to Audit Your Own Marketing Before You Spend More",
+      "category": "Strategy",
+      "excerpt": "Before you brief another campaign, spend an hour finding out what's actually working. A simple way to audit your own marketing first.",
+      "date": "2026-09-15",
+      "tags": ["Strategy", "Marketing Strategy"],
+      "thumb": "",
+      "postFile": "how-to-audit-your-marketing-before-you-spend-more.html"
+    },
+    {
+      "slug": "does-your-social-media-need-a-strategy",
+      "title": "Does Your Social Media Need a Strategy, or Just Better Content?",
+      "category": "Social Media",
+      "excerpt": "Posting more often rarely fixes a social account that isn't working. Here's how to tell whether the problem is the content or the plan behind it.",
+      "date": "2026-09-14",
+      "tags": ["Social Media", "Strategy"],
+      "thumb": "",
+      "postFile": "does-your-social-media-need-a-strategy.html"
+    },
+    {
       "slug": "what-is-content-marketing",
       "title": "What Is Content Marketing? A Plain-Language Guide for Purpose-Driven Organisations",
       "category": "Content Marketing",
